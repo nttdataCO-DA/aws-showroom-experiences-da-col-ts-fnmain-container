@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: acrnttdatacotvs.azurecr.io/portal-iac-api:latest
+    volumes:
+      - ./github-private-key.pem:/usr/src/app/private-key/github.pem
+    ports:
+      - 3000:3000
+    env_file:
+      - .env.contenedor

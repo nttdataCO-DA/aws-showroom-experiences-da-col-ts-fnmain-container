@@ -1,0 +1,14 @@
+dist
+node_modules
+.env.*
+.env
+
+src/common/github/temp-source
+src/common/github/temp-template
+**.pem
+
+locals.**
+local.**
+
+iac/.terraform
+iac/.terraform.lock.hcl

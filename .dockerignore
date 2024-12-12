@@ -1,0 +1,10 @@
+dist
+node_modules    
+.env
+.github
+src/common/temp-source
+src/common/temp-template
+.gitignore
+docker-compose.yaml
+Dockerfile
+nodemon.json
