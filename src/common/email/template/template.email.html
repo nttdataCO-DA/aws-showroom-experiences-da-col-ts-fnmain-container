@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notifications</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body p {
+            margin: 0;
+        }
+        
+        .info {
+            border-left: 5px solid #28a745;
+        }
+        .warning {
+            border-left: 5px solid #ffc107;
+        }
+        .error {
+            border-left: 5px solid #dc3545;
+        }
+        .success {
+            border-left: 5px solid #18c96e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Confirmation Notification -->
+        <div class="card {{messageLevel}}">
+            <div class="card-header">
+                {{messageOperation}}
+            </div>
+            <div class="card-body">
+                {{{ messageContent }}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
