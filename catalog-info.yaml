@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: aws-showroom-experiences-da-col-ts-fnmain-container
+  description: "Repositorio para la gestión de experiencias en el showroom de AWS en Colombia."
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: nttdataCO-DA/aws-showroom-experiences-da-col-ts-fnmain-container
+    sonarqube.org/project-key: aws-showroom-experiences-da-col-ts-fnmain-container
+  tags:
+    - aws
+    - typescript
+    - cloud
+    - showroom
+spec:
+  type: website
+  owner: nttdataco-da
+  lifecycle: production
+  system: discovery
